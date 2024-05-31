@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple (India)</title>
+    <title>Apple Clone</title>
     <link rel="stylesheet" href="../build/output.css">
+    <link rel="shortcut icon" href="./img/Apple-logo-white-bg.svg" type="image/x-icon">
 </head>
 <body class="font-roboto">
     <header>
@@ -30,6 +31,7 @@
         <div class="bg-neutral-500 w-full h-11"></div>
         <div class="bg-zinc-900 w-full h-12 text-white text-sm flex gap-1 justify-center items-center p-2">Get up to 24 months No Cost EMI on all iPhone models from most leading banks.<a href="#" class="text-blue-700">Shop now ></a></div>
 
+        <!-- product views -->
         <div class="flex flex-col gap-3">
             <div>
                 <!-- iphone 15 pro max -->
@@ -59,14 +61,61 @@
 
             <div>
                 <!-- ipad pro -->
-                <div class="bg-black grid justify-items-center p-9 w-full">
+                <div class="bg-black grid justify-items-center pt-9 w-full">
                     <p class="text-white text-6xl font-bold">iPad Pro</p>
                     <p class="text-white text-3xl font-regular pb-4">Unbelievably thin. Incredibly powerful.</p>
                     <div class="flex">
                         <button type="button" class="text-white bg-blue-600 hover:bg-sky-600 hover:transition-all ease-in-out focus:outline-none font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button>
                         <button type="button" class="text-blue-600 bg-transparent border-2 border-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Buy</button>
                     </div>
-                    <img src="./img/ipad-pro_overview.jpg" alt="" class="object-cover h-3/4">
+                    <img src="./img/ipad-pro_overview.jpg" alt="" class="object-cover h-96">
+                </div>
+            </div>
+
+            <!-- grid items -->
+            <div class="grid grid-cols-2 justify-items-center p-3 gap-3">
+
+                <!-- WWDC24 -->
+                <div class="grid justify-items-center bg-black text-white w-full p-4">
+                    <img src="./img/promo_wwdc24-edited.jpg" alt="" class="size-96 object-cover">
+                    <img src="./img/WWDC-logo.svg" alt="" class="h-12 pb-3">
+                    <p class="text-white text-xl text-center font-regular pb-3">Apple Worldwide Developers Conference.<br>Join us online from 10 to 14 June.</p>
+                    <div class="flex">
+                        <button type="button" class="text-white bg-blue-600 hover:bg-sky-600 hover:transition-all ease-in-out focus:outline-none font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- ipad air -->
+                <div class="grid justify-items-center bg-gradient-to-b from-blue-300 to-white w-full ">
+                    <img src="./img/ipad-air-logo.svg" alt="" class="h-52 w-40 absolute pb-24">
+                    <p class="text-neutral-800 text-xl font-regular absolute pt-20">Two sizes. Faster chip. Does it all.</p>
+                    <div class="absolute mt-32">
+                        <button type="button" class="text-white bg-zinc-900 hover:bg-zinc-600 hover:transition-all ease-in-out focus:outline-none font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button>
+                        <button type="button" class="text-zinc-900 bg-transparent border-2 border-zinc-900 hover:bg-zinc-900 hover:text-white hover:transition-all font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Buy</button>
+                    </div>
+                    <img src="./img/promo_ipadair_large-removebg.png" alt="" class="object-cover pt-40">
+                </div>
+
+                <!-- macbook air -->
+                <div class="grid justify-items-center bg-gray-100 w-full p-9">
+                    <p class="text-neutral-800 text-4xl font-medium">MacBook Air</p>
+                    <p class="text-neutral-800 text-xl text-center font-regular pb-3">Supercharged by M3.</p>
+                    <div class="flex">
+                        <button type="button" class="text-white bg-blue-600 hover:bg-sky-600 hover:transition-all ease-in-out focus:outline-none font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button>
+                        <button type="button" class="text-blue-600 bg-transparent border-2 border-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Buy</button>
+                    </div>
+                    <img src="./img/promo_macbook_air_m3_large-square.jpg" alt="" class="h-96">
+                </div>
+
+                <!-- apple watch -->
+                <div class="grid justify-items-center bg-slate-50 text-white w-full p-9">
+                    <img src="./img/Apple-watch-logo.png" alt="" class="absolute h-14">
+                    <p class="text-neutral-800 text-xl text-center font-regular pt-16">Next-level adventure.</p>
+                    <div class="pt-3">
+                        <button type="button" class="text-white bg-blue-600 hover:bg-sky-600 hover:transition-all ease-in-out focus:outline-none font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Learn More</button>
+                        <button type="button" class="text-blue-600 bg-transparent border-2 border-blue-600 hover:bg-blue-600 hover:text-white hover:transition-all font-regular rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Buy</button>
+                    </div>
+                    <img src="./img/promo_apple_watch_ultra2_large-edited.png" alt="" class="">
                 </div>
             </div>
         </div>
