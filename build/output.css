@@ -610,12 +610,32 @@ video {
   margin-inline-end: 0.5rem;
 }
 
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.ml-60{
+  margin-left: 15rem;
+}
+
+.mr-60{
+  margin-right: 15rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-32{
   margin-top: 8rem;
 }
 
 .flex{
   display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
 }
 
 .grid{
@@ -695,6 +715,14 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -705,6 +733,10 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-items-start{
+  justify-items: start;
 }
 
 .justify-items-center{
@@ -719,8 +751,26 @@ video {
   gap: 2.5rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .rounded-full{
@@ -811,6 +861,10 @@ video {
   padding: 1rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .p-9{
   padding: 2.25rem;
 }
@@ -870,6 +924,10 @@ video {
   padding-top: 2.25rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -926,6 +984,11 @@ video {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+.text-neutral-600{
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
+}
+
 .text-neutral-800{
   --tw-text-opacity: 1;
   color: rgb(38 38 38 / var(--tw-text-opacity));
@@ -970,8 +1033,17 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ease-out{
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+ul.horizontal-list li:not(:first-child)::before {
+  content: " | ";
+  /* Replace with your desired separator */
+  position: absolute;
+  right: -1rem;
+  /* Adjust spacing as needed */
+}
+
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -986,14 +1058,14 @@ video {
   display: flex;
   height: 100%;
   transition: transform 0.7s ease-out;
-  /* Add smooth transition */
+  /* Smooth transition */
 }
 
 .slide {
   min-width: 100%;
   position: relative;
   transition: opacity 0.7s ease-out;
-  /* Add smooth transition for opacity */
+  /* Smooth transition for opacity */
 }
 
 .slide img {
@@ -1018,7 +1090,7 @@ video {
 }
 
 #next-btn,
-  #prev-btn {
+#prev-btn {
   cursor: pointer;
   background: transparent;
   font-size: 30px;
@@ -1028,7 +1100,7 @@ video {
 }
 
 #next-btn:focus,
-  #prev-btn:focus {
+#prev-btn:focus {
   outline: none;
 }
 
